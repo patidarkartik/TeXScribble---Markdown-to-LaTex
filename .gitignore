@@ -24,3 +24,7 @@ yarn-error.log*
 # System files
 .DS_Store
 Thumbs.db
+
+# Documentation
+project_architecture_summary.md
+
