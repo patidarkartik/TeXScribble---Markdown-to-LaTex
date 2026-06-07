@@ -1,0 +1,70 @@
+Role: Act as an expert Senior Full-Stack Developer and DevOps Engineer. Mera goal ek "Markdown-to-LaTeX Document Converter" banana hai. Mujhe step-by-step code, project structure, aur sabhi installation commands chahiye. Important: Tumhe frontend aur backend ke liye required dependencies khud install karni hain (commands run karni hain).
+
+1. Project Overview:
+Ek web application jahan users simple Markdown ya plain text likh sakein, aur backend usko automatically well-formatted LaTeX code aur PDF me convert kar de. Ye app academics aur professionals ke liye reports aur resumes banane ke kaam aayegi.
+
+2. Tech Stack & Dependencies (Jo Install & Use Karni Hain):
+
+Frontend & Backend: MERN stack (MongoDB, Express.js, React.js, Node.js). Antigravity, please run npx create-vite for frontend and npm init -y for backend, and install required packages like express, mongoose, cors, etc.
+
+AI Integration: Local 'Ollama' ka use karna hai (http://localhost:11434). Mujhe kisi bhi paid external API key (like OpenAI) ka code nahi chahiye, yeh 100% free local execution hona chahiye.
+
+LaTeX Compiler: Backend me PDF generate karne ke liye LaTeX chahiye. (Note for Antigravity: Provide instructions for me to install texlive or a similar LaTeX compiler on my system, but write the Node.js code to use it via child_process).
+
+Containerization: Docker (Dockerfile aur docker-compose.yml chahiye).
+
+3. Core Features:
+
+Split-Screen UI: Frontend me ek taraf text editor (jahan user type karega) aur dusri taraf live preview ya compiled output area.
+
+The "Free AI" Proofreader: Ek "Fix Grammar" button do. Jab user ispe click kare, toh backend me local Ollama API trigger ho, jo text ki spelling aur grammar thik karke wapas frontend par bhej de.
+
+LaTeX Compilation: Ek "Export to PDF" button ho. Backend Node.js server user ke Markdown text ko receive kare, usko LaTeX syntax me wrap kare, aur local LaTeX compiler ka use karke PDF generate karke user ko download ke liye de.
+
+Database: MongoDB me user ke saved documents (drafts) store hone chahiye.
+
+4. Implementation Steps (Execution Plan):
+
+Step 1: Run commands to create folder structure and initialize frontend (Vite/React) and backend (Express). Install all necessary npm packages.
+
+Step 2: Write Frontend React components code (using Tailwind CSS for a simple split-screen UI).
+
+Step 3: Write Backend Express server code. Include the free Ollama API call logic and the LaTeX PDF generation logic using child_process.
+
+Step 4: Provide Docker and docker-compose.yml files for containerization.
+
+Please execute the installation steps and provide the complete code for the application.
+
+
+
+
+
+---------------------------------------------------------------------------
+Sabse pehle toh Congratulations! 🎉 Aapka end-to-end pipeline bilkul sahi chal raha hai. Aapne jo Markdown bheja tha, wo Node.js backend tak gaya, Docker container ke andar pdflatex chala, aur aapka multi-page PDF generate ho kar aa gaya. Yeh is project ka sabse mushkil hissa tha aur aapne isko successfully crack kar liya hai!
+
+Lekin, agar hum PDF ke content ko dhyan se dekhein, toh text extraction aur conversion me thodi si formatting ki gadbad (bugs) hai jise hume fix karna padega:
+
+Jo Bugs Fix Karne Hain:
+Double Numbering in Headings: Aap PDF me dekho, headings kuch aisi dikh rahi hain: 1.1 1. Executive Summary.
+Yeh isliye hua kyunki Markdown me pehle se "1." likha tha, aur LaTeX jab PDF banata hai toh wo by default apni khud ki numbering (1.1, 1.2) add kar deta hai.
+
+Curly Brackets { } Leak Ho Rahe Hain: PDF me bold ya code words ke aas-paas brackets dikh rahe hain (jaise {Left Panel:} aur {child_process). Iska matlab backend ka jo function Markdown ko LaTeX me convert kar raha hai, wo \textbf{} ya \texttt{} lagate waqt brackets ko theek se format nahi kar pa raha hai.
+
+Code Block Formatting: Jo YAML ka code block tha (docker-compose wala), uski spacing aur formatting thodi bigad gayi hai.
+
+Ise Theek Kaise Karein? (Solution)
+Aapko bas Google Antigravity ko ek chhota sa feedback prompt dena hai taaki wo backend ke logic ko thoda polish kar de. Aap yeh prompt copy-paste kar lijiye:
+
+Prompt for Antigravity:
+
+"Mera PDF successfully generate ho raha hai, lekin usme formatting ke 3 bugs hain jinko theek karna hai:
+
+Double Numbering: Headings me '1.1 1. Executive Summary' jaisa aa raha hai. LaTeX ki auto-numbering ko disable karo (matlab \section ki jagah \section* use karo).
+
+Leaking Brackets: Bold aur inline code wale text me extra curly brackets print ho rahe hain (e.g., {Left Panel:} aur {child_process). Apne Markdown-to-LaTeX regex/converter logic ko theek karo. \textbf{...} aur \texttt{...} bilkul sahi se apply hone chahiye.
+
+Code Blocks: YAML code blocks ki indentation kharab ho rahi hai. Code blocks ko correctly format karne ke liye LaTeX me verbatim environment ya listings package ka use karo.
+
+Please backend (Node.js) me sirf wo function/logic update karke do jo Markdown ko LaTeX string me convert karta hai."
+
+Is update ke baad aapka PDF bilkul professional aur clean dikhne lagega.
