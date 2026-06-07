@@ -25,6 +25,9 @@ yarn-error.log*
 .DS_Store
 Thumbs.db
 
-# Documentation
-project_architecture_summary.md
-
+# Documentation & Workspace Guides
+document/
+*.md
+**/*.md
+!README.md
+!**/README.md
