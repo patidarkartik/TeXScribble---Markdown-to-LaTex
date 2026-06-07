@@ -151,9 +151,9 @@ function parseInline(text) {
   let parsed = text;
 
   // Handle single $ signs count to keep math modes safe
-  const dollarCount = (parsed.match(/\$/g) || []).length;
+  const dollarCount = (parsed.match(/(?<!\\)\$/g) || []).length;
   if (dollarCount % 2 !== 0) {
-    parsed = parsed.replace(/\$/g, '\\$');
+    parsed = parsed.replace(/(?<!\\)\$/g, '\\$');
   }
 
   // Escape percentage and ampersand
@@ -161,7 +161,7 @@ function parseInline(text) {
   parsed = parsed.replace(/&/g, '\\&');
 
   // Split by math formula delimiter to avoid escaping valid LaTeX math
-  const parts = parsed.split('$');
+  const parts = parsed.split(/(?<!\\)\$/);
   for (let i = 0; i < parts.length; i++) {
     if (i % 2 === 0) {
       // Apply markdown parse and escapes only to non-math blocks
