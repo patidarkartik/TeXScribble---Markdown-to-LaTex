@@ -1,6 +1,6 @@
 # TeXScribble | Markdown-to-LaTeX Document Converter
 
-TeXScribble is a modern, premium split-screen web application built on the MERN stack. It allows users to write simple Markdown or plain text and automatically compiles it into highly professional LaTeX code and PDF documents using a system LaTeX compiler. The app also features an AI-powered proofreader that hooks into your local, 100% free Ollama AI instance to clean up spelling and grammar errors.
+TeXScribble is a modern, premium split-screen web application built on the MERN stack. It allows users to write simple Markdown or plain text and automatically compiles it into highly professional LaTeX code and PDF documents using a system LaTeX compiler.
 
 ---
 
@@ -8,7 +8,7 @@ TeXScribble is a modern, premium split-screen web application built on the MERN 
 
 - **Sleek Split-Screen Workspace**: Modern dark-theme editor on the left pane and dynamic tabbed compiler preview (PDF, LaTeX Code, Compiler Logs) on the right.
 - **Dynamic PDF Live Preview**: Builds the PDF on-the-fly via system processes and renders it in an interactive browser container.
-- **Free Local AI Proofreader**: Integrated grammar, punctuation, and spelling checker utilizing a local Ollama instance (no API keys required).
+
 - **Auto-Saving Drafts**: Keeps your work synced to a local MongoDB database with debounced automatic saving.
 - **Clean Document Downloads**: Download files directly as compiled PDFs (`.pdf`) or export the raw LaTeX source (`.tex`) for external compilers.
 - **Gracious Fallbacks**: If a LaTeX compiler is not installed on the system, compilation errors/logs are captured, highlighting errors, and the generated LaTeX code is still returned so your work is never lost.
@@ -20,7 +20,7 @@ TeXScribble is a modern, premium split-screen web application built on the MERN 
 - **Frontend**: React.js (Vite), Tailwind CSS v4, Lucide React
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB (Mongoose ORM)
-- **AI Integration**: Local Ollama (http://localhost:11434)
+
 - **LaTeX Compiler**: `pdflatex` (System-wide binary)
 - **Containerization**: Docker & Docker Compose
 
@@ -34,10 +34,8 @@ To run the application locally on your host machine, you will need:
 
 1. **Node.js** (v18 or higher recommended)
 2. **MongoDB** (Local instance running at `mongodb://localhost:27017`)
-3. **Ollama** (Running locally at `http://localhost:11434` with `llama3` or another preferred model pulled)
-   - Install from [ollama.com](https://ollama.com/)
-   - Pull the default model: `ollama pull llama3`
-4. **LaTeX Compiler** (Required for PDF generation on the host machine):
+
+3. **LaTeX Compiler** (Required for PDF generation on the host machine):
    - **Windows**: Install [MiKTeX](https://miktex.org/download) or [TeX Live](https://www.tug.org/texlive/). Ensure `pdflatex` is added to your environment `PATH`.
    - **macOS**: Install [MacTeX](https://www.tug.org/mactex/).
    - **Linux**: Install `texlive-latex-base` and `texlive-fonts-recommended` (e.g., `sudo apt-get install texlive-latex-base texlive-fonts-recommended`).
@@ -55,9 +53,9 @@ Docker Compose automatically encapsulates the MongoDB database, the Express back
    ```
 3. Open your browser and navigate to:
    - **Frontend**: [http://localhost:5173](http://localhost:5173)
-   - **Backend API**: [http://localhost:5000](http://localhost:5000)
+   - **Backend API**: [http://localhost:7860](http://localhost:7860)
 
-*Note: The backend container uses `host.docker.internal` to talk directly to the Ollama instance running on your host machine.*
+
 
 ---
 
@@ -65,9 +63,8 @@ Docker Compose automatically encapsulates the MongoDB database, the Express back
 
 If you wish to run the app directly on your host machine (outside Docker):
 
-### 1. Start MongoDB & Ollama
+### 1. Start MongoDB
 - Ensure local MongoDB is running on port `27017`.
-- Start Ollama and verify it is accessible at `http://localhost:11434`.
 
 ### 2. Run the Backend Server
 1. Navigate to the `backend/` directory:

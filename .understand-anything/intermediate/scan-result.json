@@ -1,0 +1,167 @@
+{
+  "scriptCompleted": true,
+  "files": [
+    {
+      "path": "backend/.dockerignore",
+      "language": "unknown",
+      "sizeLines": 4,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "backend/Dockerfile",
+      "language": "dockerfile",
+      "sizeLines": 18,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "backend/package.json",
+      "language": "json",
+      "sizeLines": 22,
+      "fileCategory": "config"
+    },
+    {
+      "path": "backend/src/config/db.js",
+      "language": "javascript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/src/middleware/auth.js",
+      "language": "javascript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/src/models/Document.js",
+      "language": "javascript",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/src/models/User.js",
+      "language": "javascript",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/src/server.js",
+      "language": "javascript",
+      "sizeLines": 446,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/src/utils/mdToLatex.js",
+      "language": "javascript",
+      "sizeLines": 218,
+      "fileCategory": "code"
+    },
+    {
+      "path": "context.txt",
+      "language": "txt",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docker-compose.yml",
+      "language": "yaml",
+      "sizeLines": 38,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "frontend/.dockerignore",
+      "language": "unknown",
+      "sizeLines": 3,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "frontend/Dockerfile",
+      "language": "dockerfile",
+      "sizeLines": 16,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "frontend/eslint.config.js",
+      "language": "javascript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/index.html",
+      "language": "html",
+      "sizeLines": 14,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "frontend/package.json",
+      "language": "json",
+      "sizeLines": 30,
+      "fileCategory": "config"
+    },
+    {
+      "path": "frontend/README.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "frontend/src/App.css",
+      "language": "css",
+      "sizeLines": 197,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "frontend/src/App.jsx",
+      "language": "javascript",
+      "sizeLines": 1739,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/index.css",
+      "language": "css",
+      "sizeLines": 76,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "frontend/src/main.jsx",
+      "language": "javascript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/vite.config.js",
+      "language": "javascript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 156,
+      "fileCategory": "docs"
+    }
+  ],
+  "totalFiles": 23,
+  "filteredByIgnore": 0,
+  "estimatedComplexity": "small",
+  "stats": {
+    "filesScanned": 23,
+    "byCategory": {
+      "infra": 5,
+      "config": 2,
+      "code": 10,
+      "docs": 3,
+      "markup": 3
+    },
+    "byLanguage": {
+      "unknown": 2,
+      "dockerfile": 2,
+      "json": 2,
+      "javascript": 10,
+      "txt": 1,
+      "yaml": 1,
+      "html": 1,
+      "markdown": 2,
+      "css": 2
+    }
+  }
+}

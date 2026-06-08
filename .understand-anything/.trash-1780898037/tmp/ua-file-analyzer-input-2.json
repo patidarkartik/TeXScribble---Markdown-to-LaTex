@@ -1,0 +1,21 @@
+{
+  "projectRoot": "d:/Jarvis/MLOps Sig",
+  "batchFiles": [
+    {
+      "path": "frontend/.dockerignore",
+      "language": "unknown",
+      "sizeLines": 3,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "frontend/Dockerfile",
+      "language": "dockerfile",
+      "sizeLines": 16,
+      "fileCategory": "infra"
+    }
+  ],
+  "batchImportData": {
+    "frontend/.dockerignore": [],
+    "frontend/Dockerfile": []
+  }
+}

@@ -1,0 +1,689 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "name": "TeXScribble",
+    "languages": [
+      "javascript",
+      "css",
+      "html",
+      "json",
+      "yaml",
+      "dockerfile",
+      "markdown"
+    ],
+    "frameworks": [
+      "react",
+      "express",
+      "mongodb",
+      "docker",
+      "vite"
+    ],
+    "description": "Markdown-to-LaTeX converter service with Express backend and React frontend.",
+    "analyzedAt": "2026-06-08T05:53:53.623Z",
+    "gitCommitHash": "83a8a430b408276560653a02c5aee3f752216e2f"
+  },
+  "nodes": [
+    {
+      "id": "service:backend/.dockerignore",
+      "type": "service",
+      "name": ".dockerignore",
+      "filePath": "backend/.dockerignore",
+      "summary": "Specifies files and folders to ignore when building the backend Docker image.",
+      "tags": [
+        "infrastructure",
+        "containerization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "service:backend/Dockerfile",
+      "type": "service",
+      "name": "Dockerfile",
+      "filePath": "backend/Dockerfile",
+      "summary": "Multi-stage Dockerfile to compile and deploy the backend Node.js and LaTeX server.",
+      "tags": [
+        "infrastructure",
+        "containerization",
+        "deployment"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "service:frontend/.dockerignore",
+      "type": "service",
+      "name": ".dockerignore",
+      "filePath": "frontend/.dockerignore",
+      "summary": "Specifies files and folders to ignore when building the frontend Docker image.",
+      "tags": [
+        "infrastructure",
+        "containerization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "service:frontend/Dockerfile",
+      "type": "service",
+      "name": "Dockerfile",
+      "filePath": "frontend/Dockerfile",
+      "summary": "Dockerfile to build and serve the frontend React application using Nginx.",
+      "tags": [
+        "infrastructure",
+        "containerization",
+        "deployment"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Root documentation detailing the Markdown-to-LaTeX converter architecture, setup, and features.",
+      "tags": [
+        "documentation",
+        "entry-point",
+        "overview"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:context.txt",
+      "type": "document",
+      "name": "context.txt",
+      "filePath": "context.txt",
+      "summary": "Workspace context or prompt file.",
+      "tags": [
+        "documentation",
+        "scratch"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "service:docker-compose.yml",
+      "type": "service",
+      "name": "docker-compose.yml",
+      "filePath": "docker-compose.yml",
+      "summary": "Docker Compose file defining backend, frontend, and database services for local orchestration.",
+      "tags": [
+        "infrastructure",
+        "containerization",
+        "orchestration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:frontend/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "frontend/README.md",
+      "summary": "Documentation for building, running, and configuring the React frontend application.",
+      "tags": [
+        "documentation",
+        "frontend"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:frontend/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "frontend/index.html",
+      "summary": "Main HTML entry point for the React single-page application.",
+      "tags": [
+        "markup",
+        "entry-point"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:frontend/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "frontend/package.json",
+      "summary": "Node package configuration for frontend dependencies and development scripts.",
+      "tags": [
+        "configuration",
+        "build-system"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:backend/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "backend/package.json",
+      "summary": "Node package configuration for backend server dependencies and scripts.",
+      "tags": [
+        "configuration",
+        "build-system"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:backend/src/config/db.js",
+      "type": "file",
+      "name": "db.js",
+      "filePath": "backend/src/config/db.js",
+      "summary": "Database configuration helper to establish a connection to MongoDB using Mongoose.",
+      "tags": [
+        "utility",
+        "database",
+        "configuration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:backend/src/config/db.js:connectDB",
+      "type": "function",
+      "name": "connectDB",
+      "filePath": "backend/src/config/db.js",
+      "lineRange": [
+        3,
+        13
+      ],
+      "summary": "Establishes a connection to the MongoDB database using mongoose.",
+      "tags": [
+        "database",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:backend/src/middleware/auth.js",
+      "type": "file",
+      "name": "auth.js",
+      "filePath": "backend/src/middleware/auth.js",
+      "summary": "Authentication middleware to verify JWT tokens and attach user profiles to incoming requests.",
+      "tags": [
+        "middleware",
+        "security",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:backend/src/middleware/auth.js:auth",
+      "type": "function",
+      "name": "auth",
+      "filePath": "backend/src/middleware/auth.js",
+      "lineRange": [
+        4,
+        25
+      ],
+      "summary": "Verifies client JWT tokens and retrieves authenticated user from the database.",
+      "tags": [
+        "middleware",
+        "security"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:backend/src/models/Document.js",
+      "type": "file",
+      "name": "Document.js",
+      "filePath": "backend/src/models/Document.js",
+      "summary": "Mongoose database schema representing saved LaTeX document history and compilation metadata.",
+      "tags": [
+        "data-model",
+        "database",
+        "schema-definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:backend/src/models/User.js",
+      "type": "file",
+      "name": "User.js",
+      "filePath": "backend/src/models/User.js",
+      "summary": "Mongoose database schema representing user accounts, credentials, and authentication profiles.",
+      "tags": [
+        "data-model",
+        "database",
+        "schema-definition"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:backend/src/server.js",
+      "type": "file",
+      "name": "server.js",
+      "filePath": "backend/src/server.js",
+      "summary": "Main entry point of the backend Node.js server. Configures Express routing, compilation logic, and authentication endpoints.",
+      "tags": [
+        "entry-point",
+        "service",
+        "api-handler"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:backend/src/server.js:compilePdf",
+      "type": "function",
+      "name": "compilePdf",
+      "filePath": "backend/src/server.js",
+      "lineRange": [
+        40,
+        70
+      ],
+      "summary": "Invokes pdflatex command-line tool to compile LaTeX documents into PDFs.",
+      "tags": [
+        "utility",
+        "compilation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:backend/src/server.js:cleanTempFiles",
+      "type": "function",
+      "name": "cleanTempFiles",
+      "filePath": "backend/src/server.js",
+      "lineRange": [
+        73,
+        85
+      ],
+      "summary": "Deletes temporary build files (.aux, .log, etc.) generated during pdflatex compilation.",
+      "tags": [
+        "utility",
+        "cleanup"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:backend/src/server.js:generateToken",
+      "type": "function",
+      "name": "generateToken",
+      "filePath": "backend/src/server.js",
+      "lineRange": [
+        88,
+        90
+      ],
+      "summary": "Generates a signed JWT token containing user identity details.",
+      "tags": [
+        "security",
+        "token"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:backend/src/utils/mdToLatex.js",
+      "type": "file",
+      "name": "mdToLatex.js",
+      "filePath": "backend/src/utils/mdToLatex.js",
+      "summary": "Core compilation utility that parses Markdown syntax and translates it to valid LaTeX formatting.",
+      "tags": [
+        "utility",
+        "conversion",
+        "parser"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:backend/src/utils/mdToLatex.js:mdToLatex",
+      "type": "function",
+      "name": "mdToLatex",
+      "filePath": "backend/src/utils/mdToLatex.js",
+      "lineRange": [
+        5,
+        148
+      ],
+      "summary": "Translates Markdown headings, bold, italic, links, and code blocks into LaTeX syntax.",
+      "tags": [
+        "parser",
+        "compiler"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:backend/src/utils/mdToLatex.js:parseInline",
+      "type": "function",
+      "name": "parseInline",
+      "filePath": "backend/src/utils/mdToLatex.js",
+      "lineRange": [
+        150,
+        218
+      ],
+      "summary": "Parses inline Markdown markup (bold, italic, code) inside paragraphs.",
+      "tags": [
+        "parser",
+        "helper"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:frontend/eslint.config.js",
+      "type": "file",
+      "name": "eslint.config.js",
+      "filePath": "frontend/eslint.config.js",
+      "summary": "ESLint configuration file defining static analysis rules for the frontend React code.",
+      "tags": [
+        "configuration",
+        "code-quality"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:frontend/src/App.css",
+      "type": "file",
+      "name": "App.css",
+      "filePath": "frontend/src/App.css",
+      "summary": "CSS styles for the main application layout and editor workspace interface.",
+      "tags": [
+        "markup",
+        "styling"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:frontend/src/App.jsx",
+      "type": "file",
+      "name": "App.jsx",
+      "filePath": "frontend/src/App.jsx",
+      "summary": "Main React application component coordinating the editor workspace, document list, compiler trigger, and PDF viewer.",
+      "tags": [
+        "component",
+        "frontend",
+        "ui"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:frontend/src/App.jsx:b64toBlob",
+      "type": "function",
+      "name": "b64toBlob",
+      "filePath": "frontend/src/App.jsx",
+      "lineRange": [
+        38,
+        55
+      ],
+      "summary": "Function b64toBlob",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:frontend/src/App.jsx:App",
+      "type": "function",
+      "name": "App",
+      "filePath": "frontend/src/App.jsx",
+      "lineRange": [
+        57,
+        1737
+      ],
+      "summary": "Function App",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:frontend/src/index.css",
+      "type": "file",
+      "name": "index.css",
+      "filePath": "frontend/src/index.css",
+      "summary": "Global CSS stylesheet setting typography, reset rules, and base variables.",
+      "tags": [
+        "markup",
+        "styling"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:frontend/src/main.jsx",
+      "type": "file",
+      "name": "main.jsx",
+      "filePath": "frontend/src/main.jsx",
+      "summary": "React entry point rendering the root component tree to the DOM.",
+      "tags": [
+        "entry-point",
+        "frontend"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:frontend/vite.config.js",
+      "type": "file",
+      "name": "vite.config.js",
+      "filePath": "frontend/vite.config.js",
+      "summary": "Vite build configuration file specifying plugins and proxy routes for dev-server.",
+      "tags": [
+        "configuration",
+        "build-system"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:backend/src/config/db.js",
+      "target": "function:backend/src/config/db.js:connectDB",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:backend/src/middleware/auth.js",
+      "target": "function:backend/src/middleware/auth.js:auth",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:backend/src/server.js",
+      "target": "function:backend/src/server.js:compilePdf",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:backend/src/server.js",
+      "target": "function:backend/src/server.js:cleanTempFiles",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:backend/src/server.js",
+      "target": "function:backend/src/server.js:generateToken",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:backend/src/utils/mdToLatex.js",
+      "target": "function:backend/src/utils/mdToLatex.js:mdToLatex",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:backend/src/utils/mdToLatex.js",
+      "target": "function:backend/src/utils/mdToLatex.js:parseInline",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/App.jsx",
+      "target": "function:frontend/src/App.jsx:b64toBlob",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/App.jsx",
+      "target": "function:frontend/src/App.jsx:App",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:backend/src/server.js",
+      "target": "file:backend/src/config/db.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:backend/src/server.js",
+      "target": "file:backend/src/utils/mdToLatex.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:backend/src/server.js",
+      "target": "file:backend/src/models/User.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:backend/src/server.js",
+      "target": "file:backend/src/models/Document.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:backend/src/server.js",
+      "target": "file:backend/src/middleware/auth.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/main.jsx",
+      "target": "file:frontend/src/App.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer:frontend-ui",
+      "name": "Frontend UI",
+      "description": "User interface pages, styles, and entry points for the React single-page app.",
+      "nodeIds": [
+        "file:frontend/src/main.jsx",
+        "file:frontend/src/App.jsx",
+        "file:frontend/src/App.css",
+        "file:frontend/src/index.css"
+      ]
+    },
+    {
+      "id": "layer:frontend-config",
+      "name": "Frontend Configuration",
+      "description": "Build tools, styling configuration, and package files for the frontend.",
+      "nodeIds": [
+        "file:frontend/eslint.config.js",
+        "file:frontend/vite.config.js",
+        "config:frontend/package.json",
+        "file:frontend/index.html"
+      ]
+    },
+    {
+      "id": "layer:backend-core",
+      "name": "Backend Server",
+      "description": "Express HTTP server entry point, API routes, database connections, and middleware.",
+      "nodeIds": [
+        "file:backend/src/server.js",
+        "file:backend/src/middleware/auth.js",
+        "file:backend/src/config/db.js",
+        "config:backend/package.json"
+      ]
+    },
+    {
+      "id": "layer:backend-models",
+      "name": "Backend Models",
+      "description": "Mongoose schemas representing users and document database records.",
+      "nodeIds": [
+        "file:backend/src/models/User.js",
+        "file:backend/src/models/Document.js"
+      ]
+    },
+    {
+      "id": "layer:backend-utils",
+      "name": "Backend Utilities",
+      "description": "Core parsing and helper functions including the Markdown to LaTeX compiler.",
+      "nodeIds": [
+        "file:backend/src/utils/mdToLatex.js"
+      ]
+    },
+    {
+      "id": "layer:infrastructure",
+      "name": "Infrastructure & Devops",
+      "description": "Docker configuration and orchestration files for building, run environments, and services.",
+      "nodeIds": [
+        "service:backend/.dockerignore",
+        "service:backend/Dockerfile",
+        "service:frontend/.dockerignore",
+        "service:frontend/Dockerfile",
+        "service:docker-compose.yml"
+      ]
+    },
+    {
+      "id": "layer:documentation",
+      "name": "Documentation",
+      "description": "Markdown and text files providing usage, setup, and overview information.",
+      "nodeIds": [
+        "document:README.md",
+        "document:context.txt",
+        "document:frontend/README.md"
+      ]
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "Overview and Architecture",
+      "description": "Start with the main README.md to understand the purpose of the project, including how it converts Markdown to LaTeX, compiles it to PDF, and runs using Docker.",
+      "nodeIds": [
+        "document:README.md"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Frontend App Interface",
+      "description": "The React entry point is main.jsx, which mounts the main App.jsx. App.jsx handles the user workspace, Markdown editor, compilation trigger, and PDF viewer.",
+      "nodeIds": [
+        "file:frontend/src/main.jsx",
+        "file:frontend/src/App.jsx"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Backend Server Entry Point",
+      "description": "backend/src/server.js hosts the Express server. It exposes endpoints for document compiling, user authentication, and document history management.",
+      "nodeIds": [
+        "file:backend/src/server.js"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Core MD to LaTeX Compiler",
+      "description": "mdToLatex.js contains the regex patterns and rules that parse markdown headers, bold, italics, links, and code blocks, translating them into valid LaTeX tags.",
+      "nodeIds": [
+        "file:backend/src/utils/mdToLatex.js"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Database Schema and Persistence",
+      "description": "Mongoose schemas are used to structure MongoDB records for User accounts (credentials/hash) and Document history (markdown, generated latex, and compilation logs).",
+      "nodeIds": [
+        "file:backend/src/models/User.js",
+        "file:backend/src/models/Document.js"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "Local Container Orchestration",
+      "description": "docker-compose.yml coordinates backend, frontend, and mongodb containers, creating a complete environment including networks, volumes, and ports.",
+      "nodeIds": [
+        "service:docker-compose.yml"
+      ]
+    }
+  ]
+}

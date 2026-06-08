@@ -1,0 +1,100 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 2,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "frontend/.dockerignore",
+      "language": "unknown",
+      "fileCategory": "infra",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "metrics": {}
+    },
+    {
+      "path": "frontend/Dockerfile",
+      "language": "dockerfile",
+      "fileCategory": "infra",
+      "totalLines": 16,
+      "nonEmptyLines": 12,
+      "services": [
+        {
+          "name": "build",
+          "image": "node:20-slim",
+          "ports": [],
+          "startLine": 2,
+          "endLine": 12
+        },
+        {
+          "name": "nginx",
+          "image": "nginx:alpine",
+          "ports": [
+            80
+          ],
+          "startLine": 13,
+          "endLine": 17
+        }
+      ],
+      "steps": [
+        {
+          "name": "FROM node:20-slim AS build",
+          "startLine": 2,
+          "endLine": 2
+        },
+        {
+          "name": "WORKDIR /app",
+          "startLine": 4,
+          "endLine": 4
+        },
+        {
+          "name": "COPY package*.json ./",
+          "startLine": 6,
+          "endLine": 6
+        },
+        {
+          "name": "RUN npm install",
+          "startLine": 7,
+          "endLine": 7
+        },
+        {
+          "name": "COPY . .",
+          "startLine": 9,
+          "endLine": 9
+        },
+        {
+          "name": "RUN npm run build",
+          "startLine": 10,
+          "endLine": 10
+        },
+        {
+          "name": "FROM nginx:alpine",
+          "startLine": 13,
+          "endLine": 13
+        },
+        {
+          "name": "COPY --from=build /app/dist /usr/share/nginx/html",
+          "startLine": 14,
+          "endLine": 14
+        },
+        {
+          "name": "EXPOSE 80",
+          "startLine": 15,
+          "endLine": 15
+        },
+        {
+          "name": "CMD [\"nginx\", \"-g\", \"daemon off;\"]",
+          "startLine": 16,
+          "endLine": 16
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "serviceCount": 2,
+        "stepCount": 10
+      }
+    }
+  ]
+}

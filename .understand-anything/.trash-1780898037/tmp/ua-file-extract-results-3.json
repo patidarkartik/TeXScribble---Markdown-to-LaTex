@@ -1,0 +1,122 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 156,
+      "nonEmptyLines": 126,
+      "sections": [
+        {
+          "heading": "TeXScribble | Markdown-to-LaTeX Document Converter",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Key Features",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Tech Stack & Dependencies",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "Getting Started",
+          "level": 2,
+          "line": 29
+        },
+        {
+          "heading": "Prerequisites",
+          "level": 3,
+          "line": 31
+        },
+        {
+          "heading": "Deployment Option 1: Docker Compose (Easiest)",
+          "level": 2,
+          "line": 47
+        },
+        {
+          "heading": "Deployment Option 2: Host Local Run (For Development)",
+          "level": 2,
+          "line": 64
+        },
+        {
+          "heading": "1. Start MongoDB & Ollama",
+          "level": 3,
+          "line": 68
+        },
+        {
+          "heading": "2. Run the Backend Server",
+          "level": 3,
+          "line": 72
+        },
+        {
+          "heading": "3. Run the Frontend App",
+          "level": 3,
+          "line": 91
+        },
+        {
+          "heading": "Project Structure",
+          "level": 2,
+          "line": 108
+        },
+        {
+          "heading": "LaTeX Syntax Formatting Support",
+          "level": 2,
+          "line": 139
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": "context.txt",
+      "language": "txt",
+      "fileCategory": "docs",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "docker-compose.yml",
+      "language": "yaml",
+      "fileCategory": "infra",
+      "totalLines": 38,
+      "nonEmptyLines": 34,
+      "sections": [
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "services",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "volumes",
+          "level": 1,
+          "line": 37
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    }
+  ]
+}

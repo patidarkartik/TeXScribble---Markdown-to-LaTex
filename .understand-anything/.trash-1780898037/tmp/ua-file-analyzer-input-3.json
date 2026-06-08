@@ -1,0 +1,28 @@
+{
+  "projectRoot": "d:/Jarvis/MLOps Sig",
+  "batchFiles": [
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 156,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "context.txt",
+      "language": "txt",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docker-compose.yml",
+      "language": "yaml",
+      "sizeLines": 38,
+      "fileCategory": "infra"
+    }
+  ],
+  "batchImportData": {
+    "README.md": [],
+    "context.txt": [],
+    "docker-compose.yml": []
+  }
+}

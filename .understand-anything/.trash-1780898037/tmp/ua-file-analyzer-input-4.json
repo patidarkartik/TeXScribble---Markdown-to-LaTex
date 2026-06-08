@@ -1,0 +1,28 @@
+{
+  "projectRoot": "d:/Jarvis/MLOps Sig",
+  "batchFiles": [
+    {
+      "path": "frontend/README.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "frontend/index.html",
+      "language": "html",
+      "sizeLines": 14,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "frontend/package.json",
+      "language": "json",
+      "sizeLines": 30,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    "frontend/README.md": [],
+    "frontend/index.html": [],
+    "frontend/package.json": []
+  }
+}

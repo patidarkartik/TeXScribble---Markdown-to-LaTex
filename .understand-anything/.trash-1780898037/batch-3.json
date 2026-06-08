@@ -1,0 +1,43 @@
+{
+  "nodes": [
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Root documentation detailing the Markdown-to-LaTeX converter architecture, setup, and features.",
+      "tags": [
+        "documentation",
+        "entry-point",
+        "overview"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:context.txt",
+      "type": "document",
+      "name": "context.txt",
+      "filePath": "context.txt",
+      "summary": "Workspace context or prompt file.",
+      "tags": [
+        "documentation",
+        "scratch"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "service:docker-compose.yml",
+      "type": "service",
+      "name": "docker-compose.yml",
+      "filePath": "docker-compose.yml",
+      "summary": "Docker Compose file defining backend, frontend, and database services for local orchestration.",
+      "tags": [
+        "infrastructure",
+        "containerization",
+        "orchestration"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,30 @@
+{
+  "nodes": [
+    {
+      "id": "service:backend/.dockerignore",
+      "type": "service",
+      "name": ".dockerignore",
+      "filePath": "backend/.dockerignore",
+      "summary": "Specifies files and folders to ignore when building the backend Docker image.",
+      "tags": [
+        "infrastructure",
+        "containerization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "service:backend/Dockerfile",
+      "type": "service",
+      "name": "Dockerfile",
+      "filePath": "backend/Dockerfile",
+      "summary": "Multi-stage Dockerfile to compile and deploy the backend Node.js and LaTeX server.",
+      "tags": [
+        "infrastructure",
+        "containerization",
+        "deployment"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

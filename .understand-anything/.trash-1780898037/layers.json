@@ -1,0 +1,74 @@
+[
+  {
+    "id": "layer:frontend-ui",
+    "name": "Frontend UI",
+    "description": "User interface pages, styles, and entry points for the React single-page app.",
+    "nodeIds": [
+      "file:frontend/src/main.jsx",
+      "file:frontend/src/App.jsx",
+      "file:frontend/src/App.css",
+      "file:frontend/src/index.css"
+    ]
+  },
+  {
+    "id": "layer:frontend-config",
+    "name": "Frontend Configuration",
+    "description": "Build tools, styling configuration, and package files for the frontend.",
+    "nodeIds": [
+      "file:frontend/eslint.config.js",
+      "file:frontend/vite.config.js",
+      "config:frontend/package.json",
+      "file:frontend/index.html"
+    ]
+  },
+  {
+    "id": "layer:backend-core",
+    "name": "Backend Server",
+    "description": "Express HTTP server entry point, API routes, database connections, and middleware.",
+    "nodeIds": [
+      "file:backend/src/server.js",
+      "file:backend/src/middleware/auth.js",
+      "file:backend/src/config/db.js",
+      "config:backend/package.json"
+    ]
+  },
+  {
+    "id": "layer:backend-models",
+    "name": "Backend Models",
+    "description": "Mongoose schemas representing users and document database records.",
+    "nodeIds": [
+      "file:backend/src/models/User.js",
+      "file:backend/src/models/Document.js"
+    ]
+  },
+  {
+    "id": "layer:backend-utils",
+    "name": "Backend Utilities",
+    "description": "Core parsing and helper functions including the Markdown to LaTeX compiler.",
+    "nodeIds": [
+      "file:backend/src/utils/mdToLatex.js"
+    ]
+  },
+  {
+    "id": "layer:infrastructure",
+    "name": "Infrastructure & Devops",
+    "description": "Docker configuration and orchestration files for building, run environments, and services.",
+    "nodeIds": [
+      "service:backend/.dockerignore",
+      "service:backend/Dockerfile",
+      "service:frontend/.dockerignore",
+      "service:frontend/Dockerfile",
+      "service:docker-compose.yml"
+    ]
+  },
+  {
+    "id": "layer:documentation",
+    "name": "Documentation",
+    "description": "Markdown and text files providing usage, setup, and overview information.",
+    "nodeIds": [
+      "document:README.md",
+      "document:context.txt",
+      "document:frontend/README.md"
+    ]
+  }
+]

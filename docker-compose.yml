@@ -14,11 +14,11 @@ services:
     build: ./backend
     container_name: texscribble-backend
     ports:
-      - "5000:5000"
+      - "7860:7860"
     environment:
-      - PORT=5000
+      - PORT=7860
       - MONGODB_URI=mongodb://mongodb:27017/markdown_latex
-      - OLLAMA_URL=http://host.docker.internal:11434
+
     extra_hosts:
       - "host.docker.internal:host-gateway"
     depends_on:

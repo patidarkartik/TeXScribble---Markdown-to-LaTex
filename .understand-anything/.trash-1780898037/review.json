@@ -1,0 +1,37 @@
+{
+  "issues": [],
+  "warnings": [
+    "Node 'service:backend/.dockerignore' has no edges (orphan)",
+    "Node 'service:backend/Dockerfile' has no edges (orphan)",
+    "Node 'service:frontend/.dockerignore' has no edges (orphan)",
+    "Node 'service:frontend/Dockerfile' has no edges (orphan)",
+    "Node 'document:README.md' has no edges (orphan)",
+    "Node 'document:context.txt' has no edges (orphan)",
+    "Node 'service:docker-compose.yml' has no edges (orphan)",
+    "Node 'document:frontend/README.md' has no edges (orphan)",
+    "Node 'file:frontend/index.html' has no edges (orphan)",
+    "Node 'config:frontend/package.json' has no edges (orphan)",
+    "Node 'config:backend/package.json' has no edges (orphan)",
+    "Node 'file:frontend/eslint.config.js' has no edges (orphan)",
+    "Node 'file:frontend/src/App.css' has no edges (orphan)",
+    "Node 'file:frontend/src/index.css' has no edges (orphan)",
+    "Node 'file:frontend/vite.config.js' has no edges (orphan)"
+  ],
+  "stats": {
+    "totalNodes": 32,
+    "totalEdges": 15,
+    "totalLayers": 7,
+    "tourSteps": 6,
+    "nodeTypes": {
+      "service": 5,
+      "document": 3,
+      "file": 13,
+      "config": 2,
+      "function": 9
+    },
+    "edgeTypes": {
+      "contains": 9,
+      "imports": 6
+    }
+  }
+}

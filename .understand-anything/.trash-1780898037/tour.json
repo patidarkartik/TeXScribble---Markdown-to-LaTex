@@ -1,0 +1,52 @@
+[
+  {
+    "order": 1,
+    "title": "Overview and Architecture",
+    "description": "Start with the main README.md to understand the purpose of the project, including how it converts Markdown to LaTeX, compiles it to PDF, and runs using Docker.",
+    "nodeIds": [
+      "document:README.md"
+    ]
+  },
+  {
+    "order": 2,
+    "title": "Frontend App Interface",
+    "description": "The React entry point is main.jsx, which mounts the main App.jsx. App.jsx handles the user workspace, Markdown editor, compilation trigger, and PDF viewer.",
+    "nodeIds": [
+      "file:frontend/src/main.jsx",
+      "file:frontend/src/App.jsx"
+    ]
+  },
+  {
+    "order": 3,
+    "title": "Backend Server Entry Point",
+    "description": "backend/src/server.js hosts the Express server. It exposes endpoints for document compiling, user authentication, and document history management.",
+    "nodeIds": [
+      "file:backend/src/server.js"
+    ]
+  },
+  {
+    "order": 4,
+    "title": "Core MD to LaTeX Compiler",
+    "description": "mdToLatex.js contains the regex patterns and rules that parse markdown headers, bold, italics, links, and code blocks, translating them into valid LaTeX tags.",
+    "nodeIds": [
+      "file:backend/src/utils/mdToLatex.js"
+    ]
+  },
+  {
+    "order": 5,
+    "title": "Database Schema and Persistence",
+    "description": "Mongoose schemas are used to structure MongoDB records for User accounts (credentials/hash) and Document history (markdown, generated latex, and compilation logs).",
+    "nodeIds": [
+      "file:backend/src/models/User.js",
+      "file:backend/src/models/Document.js"
+    ]
+  },
+  {
+    "order": 6,
+    "title": "Local Container Orchestration",
+    "description": "docker-compose.yml coordinates backend, frontend, and mongodb containers, creating a complete environment including networks, volumes, and ports.",
+    "nodeIds": [
+      "service:docker-compose.yml"
+    ]
+  }
+]

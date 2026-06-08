@@ -1,0 +1,14 @@
+
+aap sabse pehle to aap isko padh kar aao aur is windows aur is repo par  https://github.com/upstash/context7  isko install kro 
+
+https://github.com/Lum1104/Understand-Anything isko bhi install kro 
+
+ye repo kyuki bht badi hone vali hai
+
+please https://openai.com/index/harness-engineering/  ka proper use karna hai 
+
+aur AGENTS.md me properly use karna DRY and SOLID principle ka use karna hai
+
+--------------onboard bad me krn i hai--------------------------
+
+onboard me and u on this repo using subagents
