@@ -739,7 +739,7 @@ function App() {
                   <h3 className="text-xl font-serif font-bold text-[#1C1A17]">Free Draft Plan</h3>
                   <p className="text-xs text-[#6B665F] mt-2">Perfect for trial users and occasional compiling</p>
                   <div className="my-6">
-                    <span className="text-3xl font-bold text-[#1C1A17] font-serif">$0</span>
+                    <span className="text-3xl font-bold text-[#1C1A17] font-serif">Free Plan</span>
                     <span className="text-xs text-[#6B665F]"> / forever</span>
                   </div>
                   <ul className="space-y-3 text-xs text-[#1C1A17] border-t border-[#E6E2D8] pt-6">
@@ -764,13 +764,13 @@ function App() {
                 </div>
                 <div>
                   <h3 className="text-xl font-serif font-bold text-[#1C1A17]">Premium Scholar</h3>
-                  <p className="text-xs text-[#6B665F] mt-2">Unlimited compiles and raw LaTeX exports</p>
+                  <p className="text-xs text-[#6B665F] mt-2">300 compiles and raw LaTeX exports</p>
                   <div className="my-6">
-                    <span className="text-3xl font-bold text-[#1C1A17] font-serif">$9</span>
-                    <span className="text-xs text-[#6B665F]"> / month</span>
+                    <span className="text-3xl font-bold text-[#1C1A17] font-serif">₹42</span>
+                    <span className="text-xs text-[#6B665F]"> / 300 conversions</span>
                   </div>
                   <ul className="space-y-3 text-xs text-[#1C1A17] border-t border-[#E6E2D8] pt-6 font-medium">
-                    <li className="flex items-center gap-2 text-[#B8860B]">✓ Unlimited LaTeX PDF Compilations</li>
+                    <li className="flex items-center gap-2 text-[#B8860B]">✓ 300 LaTeX PDF Compilations</li>
 
                     <li className="flex items-center gap-2">✓ Fast download of raw LaTeX files</li>
                     <li className="flex items-center gap-2">✓ Priority document PDF storage</li>
@@ -1023,21 +1023,21 @@ function App() {
               <div className="pb-4 border-b border-[#E6E2D8]">
                 <span className="text-[10px] font-bold uppercase tracking-wider text-[#B8860B]">Selected Plan</span>
                 <h3 className="text-xl font-serif font-bold text-[#1C1A17] mt-1">Premium Scholar</h3>
-                <p className="text-xs text-[#6B665F]">Unlimited builds, infinite history storage.</p>
+                <p className="text-xs text-[#6B665F]">300 builds, infinite history storage.</p>
               </div>
 
               <div className="space-y-3">
                 <div className="flex justify-between text-xs">
-                  <span className="text-[#6B665F]">Monthly Plan Fee</span>
-                  <span className="font-medium text-[#1C1A17]">$9.00</span>
+                  <span className="text-[#6B665F]">Conversion Plan Fee</span>
+                  <span className="font-medium text-[#1C1A17]">₹42.00</span>
                 </div>
                 <div className="flex justify-between text-xs">
                   <span className="text-[#6B665F]">Taxes & Fees</span>
-                  <span className="font-medium text-[#1C1A17]">$0.00</span>
+                  <span className="font-medium text-[#1C1A17]">₹0.00</span>
                 </div>
                 <div className="flex justify-between text-xs font-bold pt-3 border-t border-[#E6E2D8]">
                   <span>Total Amount Due</span>
-                  <span className="text-[#B8860B] font-serif text-lg">$9.00</span>
+                  <span className="text-[#B8860B] font-serif text-lg">₹42.00</span>
                 </div>
               </div>
 
@@ -1108,7 +1108,7 @@ function App() {
                 )}
               </div>
               <div className="text-[#6B665F]">
-                {user?.paid ? 'Unlimited compiles unlocked' : `Compiles: ${user?.conversionCount || 0}/3 free used`}
+                {user?.paid ? '300 compiles unlocked' : `Compiles: ${user?.conversionCount || 0}/3 free used`}
               </div>
             </div>
             {!user?.paid && (
@@ -1363,7 +1363,7 @@ function App() {
                       <div>
                         <h3 className="text-sm font-serif font-bold text-[#1C1A17]">No PDF Generated</h3>
                         <p className="text-xs text-[#6B665F] mt-1 leading-relaxed">
-                          Click compile to build your document. Free accounts include 3 compiles, with unlimited builds in premium.
+                          Click compile to build your document. Free accounts include 3 compiles, with 300 builds in premium.
                         </p>
                       </div>
                       <button
@@ -1444,19 +1444,19 @@ function App() {
 
             <h3 className="text-2xl font-serif font-bold text-[#1C1A17] mb-2">Upgrade to Premium</h3>
             <p className="text-xs text-[#6B665F] mb-6 leading-relaxed">
-              You've hit the limit of 3 free PDF compiles. Get unlimited compilation and raw LaTeX exports.
+              You've hit the limit of 3 free PDF compiles. Get 300 compiles and raw LaTeX exports.
             </p>
 
             <div className="p-4 bg-[#F5F3EC] rounded-lg border border-[#E6E2D8] mb-6 text-left space-y-3 text-xs">
-              <div className="flex items-center gap-2">✓ Unlimited pdf compilations</div>
+              <div className="flex items-center gap-2">✓ 300 pdf compilations</div>
               <div className="flex items-center gap-2">✓ Full LaTeX file downloads</div>
 
               <div className="flex items-center gap-2 font-bold text-[#B8860B]">✓ Lifetime storage for documents</div>
             </div>
 
             <div className="mb-6">
-              <span className="text-3xl font-bold font-serif text-[#1C1A17]">$9</span>
-              <span className="text-xs text-[#6B665F]"> / month</span>
+              <span className="text-3xl font-bold font-serif text-[#1C1A17]">₹42</span>
+              <span className="text-xs text-[#6B665F]"> / 300 conversions</span>
             </div>
 
             <div className="space-y-3">
@@ -1464,7 +1464,7 @@ function App() {
                 onClick={() => { setShowUpgradeModal(false); setActiveView('checkout'); }}
                 className="btn-gold w-full py-2.5 text-xs font-semibold cursor-pointer text-center"
               >
-                Unlock Unlimited Compiling
+                Unlock 300 Compiles
               </button>
               <button 
                 onClick={() => setShowUpgradeModal(false)}
