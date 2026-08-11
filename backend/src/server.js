@@ -91,6 +91,23 @@ const generateToken = (user) => {
 
 // ROUTES
 
+// --- HEALTH CHECK ---
+
+app.get('/health', async (req, res) => {
+  // mongoose.connection.readyState: 0=disconnected, 1=connected, 2=connecting, 3=disconnecting
+  if (mongoose.connection.readyState !== 1) {
+    return res.status(500).json({ server: 'ok', database: 'unavailable' });
+  }
+
+  try {
+    // Lightweight ping using the existing connection — no new connection created
+    await mongoose.connection.db.admin().ping();
+    return res.status(200).json({ server: 'ok', database: 'ok' });
+  } catch {
+    return res.status(500).json({ server: 'ok', database: 'unavailable' });
+  }
+});
+
 // --- AUTHENTICATION ROUTES ---
 
 // Register
