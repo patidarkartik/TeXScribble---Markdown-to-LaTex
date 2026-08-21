@@ -1,0 +1,120 @@
+ublock origin
+passowrd-bitwarden chrome extension
+ente auth 
+artificialanalysis.ai
+openrouter.ai
+isaiprofitable
+hackernews
+lmstudio
+clodflare dns and ddos
+runpad
+cockpit tool
+use good amount of perplexcity and burstiness vary stetence length and paragraph structutre,intensionally make comma errors,human ki language and style likho
+tax free
+olama,lmstudio
+google stitch - ui
+latex for code
+overleaf for resume
+pandoc,pymufpdf,pdf skills
+kilocode
+reddit
+vercel project deploy
+hostinger - domain 
+https://instantdomainsearch.com/
+
+inference scripts likhni h pretained model ke liye
+mlflow - training check
+3 minutes paper
+https://www.pythonanywhere.com/
+krishnayak - for ai learning
+context7
+
+#antigravity
+app sabse phele to isko padho aur is pc aur is repo https://github.com/upstash/context7 isko install kro
+context7 install krlo - link copy krke dena h(https://github.com/upstash/context7)
+
+understand anything - https://github.com/Lum1104/Understand-Anything isko bhi install kro (mujhe aur tumhe on boarding kro yahan is repo yr using subagents -- time and credit taking process)
+onboard kro subagents understand anything ka use krke
+
+https://openai.com/index/harness-engineering/
+4 terms :
+kiss
+yagini
+dry** - use these principle
+solid** -  use these principle
+
+tailwind ka skill kya h frontend ka ,stitch se sikhke avv  and harness-engineering ne jese guidence di h vese kamm hona chiye
+
+***use file - agent.mdcode
+aurr agents.md mai properly dry and solid priciple ka use krvana hai.
+# 500 line se jada ka ni hona chiye
+
+***  / (slash) command on antigravity -- mention krti h 
+eg- aur features add kro professor ko chiye and srtudne /understand -----> tag kra h 
+
+*graphify -- amiro ke liye
+docploy - system pe set kro 
+
+keywords - ultra elegant and timeless
+
+#handoff naam ka folder bnvana h - kya kya baat hu,kya kya try kiya,kya kya nhi hua,ye deplyement kese hua h,kya mcp api use ki h usko document kro and agent.md me
+
+#company registration
+not pvt limited
+llp-limited liberty property(gumasta - panchiyan ka praman patra)
+(agent isvat)
+propertership me assests aapke hai mtlb personal assests libel hai then 750 -800 /-
+
+1 yr license 500/-
+icici bank - current account(sbi) --> chota account 
+razor pay --> payment gateway
+buiness ki long term first quality then money
+kyun --> liberty 0 ho jaye
+eg. --> kinfisher bhag gya
+
+after registration company money and personal assests are different
+
+#marketing
+reddit comments - glt kro pehchan bnav / thode din baad reddit post used to train llm
+email marketing
+instagram reels
+
+
+aapna project launch kro
+su no
+comapny ko paise nhi dena
+se pr upr laane ki kosish mt krna
+just do buiness quality best content
+
+
+dockploy pr hmesha nhi kr skte
+toh surver buy kro
+netcup---> backup nhi deta easily
+heztner
+aws
+oracle ---> std discount
+
+infrastruture as a code
+jenkins
+niyo global forex card
+
+vector embedding ---> save ya store quadrant
+
+ollma
+lm studio (without internet)
+
+sms - twillo
+virtual office twillo ke though 
+company registration uk(4$)
+
+startupwala.com
+
+wasabi --> storage
+responsively app -->
+tailscale ---> free me host kr skte lap pe
+retel ai
+
+#laptop se server kese bnayee
+cloudflare ka zero trust 
+ya 
+tailscale 
